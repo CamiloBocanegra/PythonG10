@@ -35,4 +35,19 @@ print("")
 
 
 #3.5
-#TODO: preguntar al profesor
+
+cadena2 = input("ingrese la cadena the caracteres: ") 
+buscar_caracter = input("ingrese el caracter a buscar en la cadena: ")
+
+encontrado = False
+pos_encontrado = 0
+for i in range(len(cadena2)):
+   if(buscar_caracter == cadena2[i]):
+      encontrado = True
+      pos_encontrado = i
+      break
+
+if(encontrado):
+   print(f"el caracter {buscar_caracter} fue encontrado en la posicion {pos_encontrado}")
+else:
+   print(f"el caracter {buscar_caracter} no fue encontrado en la cadena")
